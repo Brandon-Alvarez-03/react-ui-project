@@ -72,7 +72,7 @@
 .top-6-container {
   font-size: calc(10px + 2vmin);
   width: 98%;
-  margin: 120px 0 20px 0;
+  margin: 110px 0 20px 0;
   text-align: left;
 }
 
@@ -80,6 +80,11 @@
   font-size: 28px;
   font-weight: 700;
   margin: 10px 0 10px 0;
+}
+
+.top-6 {
+  flex-wrap: wrap;
+  /* be sure to add the css for each top card as a styled div */
 }
 
 .footer {
