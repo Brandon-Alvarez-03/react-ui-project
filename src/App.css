@@ -14,71 +14,54 @@
   text-align: center;
   height: 100vh;
   background-color: #121212;
-  font-size: calc(10px + 2vmin);
   color: #ffffff;
 
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: minmax(10px, 50px);
+  grid-template-columns: 225px 1fr;
+  grid-template-rows: 75px 1fr 90px;
   grid-template-areas:
-    "sb nav nav nav nav nav nav nav nav nav"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "sb main main main main main main main main main"
-    "ft ft ft ft ft ft ft ft ft ft";
+    "sb nav"
+    "sb main"
+    "ft ft";
 }
 
-/* .App * {
+.App * {
   border: 1px solid #ffffff;
-} */
+}
 
 .nav {
   grid-area: nav;
-  /* display: flex;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   background-color: rgba(22, 22, 22, 0.7);
-
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 100px;
+}
+
+.nav * {
+  margin: 0 20px 0 20px;
 }
 
 .sidebar {
   grid-area: sb;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  /* font-size: calc(10px + 2vmin); */
   background-color: #000000;
 }
 
+.sidebar * {
+  margin: 25px;
+}
+
 .main {
-  margin-top: -50px;
+  margin-top: -150px;
   grid-area: main;
   /* display: flex;
   flex-direction: column;
