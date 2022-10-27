@@ -16,9 +16,12 @@ function Main() {
           <TP title={"Playlist 6"} />
         </div>
       </div>
-      <div className="song-card-container">
+      <div className="songs-container">
         <p className="recommendation">Songs you might like</p>
-        <div className="songs">
+        <div className="song-row-container">
+          <SongRow />
+          <SongRow />
+          <SongRow />
           <SongRow />
           <SongRow />
           <SongRow />

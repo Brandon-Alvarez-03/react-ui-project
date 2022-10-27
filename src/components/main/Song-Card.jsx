@@ -1,7 +1,7 @@
 import React from "react";
 
 function SongCard() {
-  return <div>Song-Card</div>;
+  return <div className="song-card">Song-Card</div>;
 }
 
 export default SongCard;

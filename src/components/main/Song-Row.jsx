@@ -7,7 +7,14 @@ function SongRow() {
       <SongCard />
       <SongCard />
       <SongCard />
-
+      <SongCard />
+      <SongCard />
+      <SongCard />
+      <SongCard />
+      <SongCard />
+      <SongCard />
+      <SongCard />
+      <SongCard />
     </div>
   );
 }
