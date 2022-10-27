@@ -33,7 +33,7 @@
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   background-color: rgba(22, 22, 22, 0.7);
   position: -webkit-sticky;
@@ -43,7 +43,7 @@
 }
 
 .nav * {
-  margin: 0 20px 0 20px;
+  margin: 15px 20px auto 20px;
 }
 
 .sidebar {
@@ -82,9 +82,31 @@
   margin: 10px 0 10px 0;
 }
 
+.recommendation {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+}
+
 .top-6 {
   flex-wrap: wrap;
   /* be sure to add the css for each top card as a styled div */
+}
+
+.song-card-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* font-size: calc(10px + 2vmin); */
+  width: 98%;
+  margin: 10px 0 20px 0;
+  text-align: left;
+}
+
+.song-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer {
