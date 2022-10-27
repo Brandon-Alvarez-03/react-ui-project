@@ -1,56 +1,88 @@
-.App {
+/* .App {
   text-align: center;
   height: 100vh;
   background-color: #121212;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
-}
+} */
 
-.App div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #121212;
+  display: grid;
   font-size: calc(10px + 2vmin);
   color: #ffffff;
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: minmax(10px, 50px);
+  grid-template-areas:
+    "sb nav nav nav nav nav nav nav nav nav"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "sb main main main main main main main main main"
+    "ft ft ft ft ft ft ft ft ft ft";
 }
 
 .nav {
-  display: flex;
+  grid-area: nav;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   background-color: lightcoral;
 }
 
 .sidebar {
-  display: flex;
+  grid-area: sb;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   background-color: lightseagreen;
 }
 
 .main {
-  display: flex;
+  grid-area: main;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   background-color: blue;
 }
 
 .footer {
-  display: flex;
+  grid-area: ft;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   background-color: slategray;
 }
