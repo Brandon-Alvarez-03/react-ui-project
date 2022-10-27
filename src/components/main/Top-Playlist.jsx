@@ -1,7 +1,7 @@
 import React from "react";
 
-function TopPlaylist() {
-  return <div>Top-Playlist</div>;
+function TopPlaylist(props) {
+  return <div>{props.title}</div>;
 }
 
 export default TopPlaylist;
