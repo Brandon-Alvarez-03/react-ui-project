@@ -1,13 +1,13 @@
 import React from "react";
-import Link from "./Links";
+import Links from "./Links";
 import Playlists from "./Playlists";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="top-links">
-        <Link />
-        <Link />
+        <Links />
+        <Links />
       </div>
       <div className="bottom-links">
         <Playlists />
