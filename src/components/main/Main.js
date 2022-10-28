@@ -6,7 +6,7 @@ function Main() {
   return (
     <div className="main">
       <div className="top-6-container">
-        <p className="greeting">Good Evening</p>
+        <p className="greeting">Good Afternoon</p>
         <div className="top-6">
           <TP title={"Playlist 1"} />
           <TP title={"Playlist 2"} />

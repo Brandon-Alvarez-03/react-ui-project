@@ -66,8 +66,8 @@
 
 .account {
   position: absolute;
-  right: 10px;
-  top: 8px;
+  right: 35px;
+  top: 7px;
 }
 
 .sidebar {
@@ -155,7 +155,7 @@
 
 .top-6 * {
   height: 80px;
-  min-width: 280px;
+  min-width: 300px;
   /* max-width: 48%; */
   flex: 1;
   margin: 10px 10px 10px 0px;
