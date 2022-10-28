@@ -16,6 +16,17 @@
   background-color: #121212;
   color: #ffffff;
 
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-rows: 75px 1fr 90px;
@@ -25,9 +36,9 @@
     "ft ft";
 }
 
-.App * {
+/* .App * {
   border: 1px solid #ffffff;
-}
+} */
 
 .nav {
   grid-area: nav;
@@ -75,6 +86,7 @@
 .link-box {
   margin-left: 0;
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .bottom-links {
@@ -103,18 +115,18 @@
 .top-6-container {
   font-size: calc(10px + 2vmin);
   width: 98%;
-  margin: 110px 0 20px 0;
+  margin: 110px 0 20px 25px;
   text-align: left;
 }
 
 .greeting {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   margin: 10px 0 10px 0;
 }
 
 .recommendation {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
   margin: 10px 0 10px 0;
 }
@@ -123,16 +135,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-wrap: wrap;
   /* be sure to add the css for each top card as a styled div */
 }
 
 .top-6 * {
   height: 80px;
-  width: 32%;
   min-width: 280px;
-  margin: 10px 0px 10px 10px;
+  /* max-width: 48%; */
+  flex: 1;
+  margin: 10px 10px 10px 0px;
 }
 
 .songs-container {
@@ -142,7 +155,7 @@
   /* justify-content: space-around; */
   /* font-size: calc(10px + 2vmin); */
   width: 98%;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 20px 27px;
   text-align: left;
 }
 
@@ -172,4 +185,17 @@
 
 .footer * {
   margin: 0 20px 0 20px;
+}
+
+.line {
+  display: inline-flex;
+  margin: auto;
+}
+
+.icon-description {
+  padding-top: 5px;
+  margin-left: -95px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: inherit;
 }
