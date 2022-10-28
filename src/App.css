@@ -17,7 +17,7 @@
   color: #ffffff;
 
   display: grid;
-  grid-template-columns: 225px 1fr;
+  grid-template-columns: 250px 1fr;
   grid-template-rows: 75px 1fr 90px;
   grid-template-areas:
     "sb nav"
@@ -25,9 +25,9 @@
     "ft ft";
 }
 
-/* .App * {
+.App * {
   border: 1px solid #ffffff;
-} */
+}
 
 .nav {
   grid-area: nav;
@@ -51,14 +51,34 @@
   grid-area: sb;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  align-items: left;
   /* font-size: calc(10px + 2vmin); */
   background-color: #000000;
 }
 
 .sidebar * {
-  margin: 25px;
+  margin: 5px 0 10px 6px;
+  text-align: left;
+  width: 94%;
+}
+
+.top-links {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  height: 55%;
+}
+
+.bottom-links {
+  height: 45%;
+  margin-top: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.bottom-links * {
+  margin-bottom: 15px;
 }
 
 .main {

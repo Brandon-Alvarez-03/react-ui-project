@@ -1,7 +1,78 @@
 import React from "react";
 
 function Playlists() {
-  return <div>Playlists</div>;
+  return (
+    <>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+      <div>Playlist</div>
+    </>
+  );
 }
 
 export default Playlists;
