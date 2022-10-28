@@ -37,24 +37,37 @@
 }
 
 /* .App * {
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(250, 250, 250, 0.4);
 } */
 
 .nav {
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  align-items: top;
-  justify-content: space-between;
-  background-color: rgba(22, 22, 22, 0.7);
+  align-items: center;
+  /* justify-content: space-between; */
+  background-color: rgba(22, 22, 22, 0.4);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
-.nav * {
-  margin: 15px 40px auto 20px;
+.nav span,
+.nav div {
+  margin: 15px 0px auto 20px;
+}
+
+.nav span {
+  background-color: rgba(22, 22, 22, 0.5);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.account {
+  position: absolute;
+  right: 10px;
+  top: 8px;
 }
 
 .sidebar {
@@ -107,7 +120,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#1cd15d, #161616 10%, #141414 15%);
+  background: linear-gradient(#1cd15d, #161616 13%, #141414 15%);
   overflow-x: hidden;
   overflow-y: auto;
 }
