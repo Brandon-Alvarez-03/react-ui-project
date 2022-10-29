@@ -1,27 +1,20 @@
-import Nav from "./components/nav/Nav";
-import Sidebar from "./components/sidebar/Sidebar";
-import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
-import {useEffect, useState} from "react";
+import Dashboard from "./Dashboard";
+// import 'bootstrap/dist/bootstrap/css/bootstrap.min.css';
+import Login from "./Login"
+import { useEffect, useState } from "react";
 import axios from "axios";
-
 import "./App.css";
 
+const code = new URLSearchParams(window.location.search).get('code');
+
 function App() {
-  // useEffect(() => {
-  //   const handleRouteChangeStart = (url) => {
-  //     console.log(`handleRouteChangeStart: ${url}`);
-  //   };
-  // });
 
   return (
-    <div className="App">
-      {/* <header className="App-header">Hello World</header> */}
-      <Nav />
-      <Sidebar />
-      <Main />
-      <Footer />
-    </div>
+    // <div className="App">
+      code ? <Dashboard code={code} /> : <Login />
+    // </div>
+
+    // <Dashboard />
   );
 }
 
